@@ -22,7 +22,8 @@ export class DetailComponent implements OnInit {
 
   total!: number;
 
-  constructor(private location: Location, private route: ActivatedRoute, private moviesService: MoviesService) {}
+  constructor(private location: Location, private route: ActivatedRoute, private moviesService: MoviesService) {
+  }
 
   ngOnInit(): void {
     this.movieID = this.getMovieID();
@@ -44,8 +45,8 @@ export class DetailComponent implements OnInit {
   }
 
   calculatePrice(movie: Movie | undefined): number {
-    const price = this.movie?.price as number;
-    const quantity = this.movie?.quantity as number;
+    const price = movie?.price as number;
+    const quantity = movie?.quantity as number;
     const total = (price * quantity);
     return total;
   }
