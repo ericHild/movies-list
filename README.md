@@ -1,27 +1,17 @@
-# App
+# Objective of the kata
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## Partie 1
+* Créer un compostant et y ajouter un formulaire avec 5 entrées : ID, nom, description, prix, quantité
+* Ajouter un bouton d'ajout au formulaire
+* Dans ce même composant, ajouter une liste de restitution des entrées du formulaire. Une liste cliquable
 
-## Development server
+## Partie 2
+* Créer un service de récupération des éléments ajoutés depuis le formulaire et afficher les resultats dans liste de restitution demandée en partie 1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Partie 3
+* Créer un compostant afin d'afficher le detail de l'élément cliqué
+* Calculer et afficher le resultat quantité * prix
+* Ajouter un bouton de retour pour aller sur la page précédente
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Partie 4
+* Créer deux pages qui affichent d'une part le formulaire et d'autre part le détail
