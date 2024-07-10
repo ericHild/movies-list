@@ -1,0 +1,22 @@
+<div class="container px-4 py-5" id="featured-3">
+
+  <a (click)="backToPreviousPage()" class="link-underline-primary">Retour</a>
+
+  <h2 class="pb-2 border-bottom">Liste des films</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" *ngIf="movies.length !== 0">
+    <div class="feature col">
+      <img
+        src="https://github.com/twbs.png"
+        alt="twbs"
+        width="32"
+        height="32"
+        class="rounded-circle flex-shrink-0"
+      />
+      <h3 class="fs-2 text-body-emphasis">{{ movie?.name }}</h3>
+      <p>{{ movie?.description }}.</p>
+      <p> Quantité : {{ movie?.quantity }}</p>
+      <p>Prix unitaire : {{ movie?.price }}</p>
+      <p>Total : {{ total}}€</p>
+    </div>
+  </div>
+</div>

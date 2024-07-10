@@ -1,0 +1,6 @@
+:host {
+  display: block;
+}
+form, #films-list {
+  width: 400px;
+}
